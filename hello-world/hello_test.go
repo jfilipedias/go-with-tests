@@ -1,4 +1,4 @@
-package main
+package helloworld
 
 import (
 	"testing"
@@ -8,7 +8,7 @@ func TestHello(t *testing.T) {
 	assertCorrectMessage := func(t *testing.T, result, expected string) {
 		t.Helper()
 		if result != expected {
-			t.Errorf("Result '%s', expected '%s'", result, expected)
+			t.Errorf("expected '%s' but got '%s'", expected, result)
 		}
 	}
 
