@@ -12,7 +12,7 @@ func TestSum(t *testing.T) {
 		want := 15
 
 		if got != want {
-			t.Errorf("want '%q' but got '%q' given, %v", want, got, numbers)
+			t.Errorf("got '%q' but want '%q' given, %v", got, want, numbers)
 		}
 	})
 
@@ -22,7 +22,7 @@ func TestSum(t *testing.T) {
 		want := 6
 
 		if got != want {
-			t.Errorf("want '%q' but got '%q' given, %v", want, got, numbers)
+			t.Errorf("got '%q' but want '%q' given, %v", got, want, numbers)
 		}
 	})
 }
@@ -32,7 +32,7 @@ func TestSumAll(t *testing.T) {
 	want := []int{3, 9}
 
 	if !slices.Equal(got, want) {
-		t.Errorf("want '%v' but got '%v'", want, got)
+		t.Errorf("got '%v' but want '%v'", got, want)
 	}
 }
 
@@ -40,7 +40,7 @@ func TestSumAllTails(t *testing.T) {
 	checkTailsSums := func(t *testing.T, got, want []int) {
 		t.Helper()
 		if !slices.Equal(got, want) {
-			t.Errorf("want '%v' but got '%v'", want, got)
+			t.Errorf("got '%v' but want '%v'", got, want)
 		}
 	}
 

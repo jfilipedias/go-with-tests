@@ -7,6 +7,6 @@ func TestAdder(t *testing.T) {
 	want := 4
 
 	if got != want {
-		t.Errorf("want '%d' but got '%d'", want, got)
+		t.Errorf("got '%d' but want '%d'", got, want)
 	}
 }

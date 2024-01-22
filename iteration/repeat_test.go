@@ -7,7 +7,7 @@ func TestRepeat(t *testing.T) {
 	want := "aaaaa"
 
 	if got != want {
-		t.Errorf("want '%q' but got '%q'", want, got)
+		t.Errorf("got '%q' but want '%q'", got, want)
 	}
 }
 
