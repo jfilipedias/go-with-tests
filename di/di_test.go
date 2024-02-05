@@ -13,7 +13,6 @@ func TestGreet(t *testing.T) {
     want := "Hello, Filipe"
 
     if got != want {
-		t.Errorf("got %q but want %q", got, want)
-	}
-
+      t.Errorf("got %q but want %q", got, want)
+    }
 }
